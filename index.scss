@@ -1,0 +1,150 @@
+$text-color:black;
+body{
+    color:$text-color ;
+
+}
+.hide{
+    display:none;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+}
+.logo{
+font-weight: 700;
+}
+ul{
+    display:flex;
+}
+
+ul li{
+    list-style: none;
+    padding:10px;
+    margin:10px;
+}
+
+.container{
+    display:grid;
+    grid-template-areas: "head head sidebar"
+                         "cont section sidebar"
+                         "footer article aside";
+    
+   gap:20px;
+}
+.item1{
+    grid-area: head;
+}
+.item1 img{
+    height:100%;
+    width:100%;
+}
+.item2{
+grid-area: cont;
+font-size: 35px;
+font-weight: 500;
+word-wrap: break-word;
+}
+.item3{
+grid-area: section;
+padding:20px;
+}
+button{
+    background: orangered;
+    color: white;
+    border:none;
+    font-size: 10px;
+    font-weight: 300;
+    padding:10px;
+}
+.item4{
+    grid-area: sidebar;
+    background-color: black;
+    color:white;
+    padding:10px;
+}
+.head4{
+    color:rgb(197, 145, 13);
+    padding:10px;
+}
+.dv4a{
+    border-bottom: 1px solid white;
+    padding:10px;
+}
+.dv4b{
+    border-bottom: 1px solid white;
+    padding:10px;
+}
+.dv4c{
+    padding:10px;
+}
+.item5{
+    grid-area: footer;
+    display:flex;
+}
+.img5{
+    height: 90%;
+    width:90%;
+}
+.p4{
+color:rgb(136, 135, 135);
+}
+h2{
+    color:rgb(208, 206, 206);
+}
+.item6{
+    grid-area: article;
+    display: flex;
+    
+}
+.img6{
+    height: 90%;
+    width: 90%;
+}
+.item7{
+    grid-area: aside;
+    display: flex;
+}
+.img7{
+    height: 90%;
+    width:90%;
+}
+img{
+    height:25%;
+    width:75%;
+}
+@media(max-width:768px){
+    .container{
+        display:flex;
+        flex-direction: column;
+    }
+    ul{
+        display:none;
+    }
+    .item1 img{
+    height:50vh;
+    }
+    
+    .item3 p{
+        font-size: 20px;
+     margin-top:0;
+     padding-top:0;
+    }
+    .item3{
+        padding-top:0;
+        margin-top:0;
+    }
+    .item2{
+        margin-bottom:0;
+        padding-bottom:0;
+    }
+    .hide{
+        display: flex;
+        justify-self: right;
+    }
+    .hid{
+        align-self: center;
+    }
+    button{
+        width:50vw;
+    }
+}
